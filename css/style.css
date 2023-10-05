@@ -1,0 +1,116 @@
+/* css style*/
+body{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    top:0;
+    text-transform: uppercase;
+    padding: 0px 200px 0px 200px;
+    background-color: #fff;
+}
+
+.link{
+    width:950px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header h1{
+    background: url(../img/logo.svg) no-repeat;
+    margin-top: 0.6rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-indent: 101%;
+}
+
+.link ul{
+    display: flex;
+    line-height:4rem;
+    padding: 5px 0px 0px 5px;
+
+}
+
+.link li{
+    width: 150px;
+    text-align: center;   
+}
+
+.link li a{
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.link li a:hover, .sub.active > a{
+    color: #0037FF;
+    box-shadow: inset  0 -2px 0 0 #0037FF;
+}
+
+.login{
+    background-color: #0037FF;
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+    line-height:3.5rem;
+    padding: 5px 10px;
+}
+/*header_Product */
+
+.sub{
+    position: relative;
+}
+
+.sub span{
+    margin-left: 5px;
+    font-size: 5px;
+}
+
+
+/*header_Product hover menu*/
+
+
+.sub .open{
+    display:none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(90, 118, 145, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+.sub .open li a:hover{
+    box-shadow: inset  0 0 0 0 #ffffff;
+}
+
+.sub:hover > .open{
+    display: block;
+}
+
+
+/*banner section*/
+
+.banner{
+    text-align: center;
+    padding: 250px 0;    
+}
+
+.banner h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.title{
+    height: 50px;
+    width: 300px;
+    background: rgb(0,55,255);
+    background: radial-gradient(circle, rgba(0,55,255,1) 0%, rgba(148,187,233,1) 100%);
+
+}
